@@ -1,0 +1,83 @@
+*, *:before, *:after { box-sizing: border-box; }
+body {
+    margin: 0;
+}
+
+/* Globals */
+h1, h2, h3, h4, p, ol, ul, li, a, figure, p:last-child, ul:last-child {
+    margin: 0;
+    padding: 0;
+}
+li {list-style-position: inside;}
+p, ul, ol {
+    margin-bottom: 1em;
+    line-height: 1.3;
+}
+img {width: 100%;}
+header, section, aside, footer {
+    padding: 8px;
+    border: 1px solid #969696;
+    border-radius: 2px;
+    /* background: #f0f0f0; */
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    grid-gap: 10px;
+}
+header, footer, .section-wrapper {background: #f0f0f0;}
+.medium {font-size: 125%;}
+.large {font-size: 400%;}
+
+
+/* Profile Container */
+#container {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    display: grid;
+    grid-gap: 10px;
+}
+
+/* Layouts */
+.two-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: minmax(200px, 1fr);
+}
+.section-wrapper {
+    display: grid;
+    grid-gap: 10px;
+}
+.section-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section {background: #fff;}
+
+#energy-box {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#energy-box figcaption {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    font-style: italic;
+}
+#energy {
+    width: 80px;
+    height: 80px;
+    margin-top: -20px;
+    background: rgb(243, 255, 70);
+    border-radius: 100%;
+    filter: blur(20px);
+}
